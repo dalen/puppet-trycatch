@@ -31,4 +31,23 @@ Notice: Compiled catalog for river.local in environment production in 0.28 secon
 Notice: Applied catalog in 0.01 seconds
 ```
 
+### Only catch certain exceptions
+
+```
+try() || {
+  assert_type('String', 1)
+}.catch('ArgumentError', 'RuntimeError') |$exception| {
+  notice("Caught ${$exception['class']}")
+}
+```
+
+Output:
+
+```
+Error: Evaluation Error: Error while evaluating a Function Call, assert_type(): Expected type String does not match actual: Integer at /Users/dalen/src/puppet-trycatch/test.pp:2:3 on node river.local
+```
+
+Note that this doesn't take exception subclasses into account. It only checks
+if the class names match exactly.
+
 ## Note that this is a hack, use accordingly

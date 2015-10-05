@@ -17,6 +17,6 @@ Puppet::Functions.create_function(:try) do
   def try
     [yield, nil]
   rescue
-    [nil, { 'class' => $!.class.to_s, 'message' => $!.message }]
+    [nil, { 'class' => $!.class.to_s, 'message' => $!.message, 'exception' => $! }]
   end
 end
