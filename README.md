@@ -30,3 +30,5 @@ Notice: Scope(Class[main]): return value from catch
 Notice: Compiled catalog for river.local in environment production in 0.28 seconds
 Notice: Applied catalog in 0.01 seconds
 ```
+
+## Note that this is a hack, use accordingly
