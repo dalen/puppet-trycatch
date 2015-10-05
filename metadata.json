@@ -1,0 +1,11 @@
+{
+  "name": "dalen-trycatch",
+  "version": "0.1.0",
+  "author": "dalen",
+  "summary": "Try/Catch functions for Puppet",
+  "license": "Apache-2.0",
+  "source": "https://github.com/dalen/puppet-trycatch",
+  "project_page": "https://github.com/dalen/puppet-trycatch",
+  "issues_url": "https://github.com/dalen/puppet-trycatch/issues",
+  "dependencies": [ ]
+}
